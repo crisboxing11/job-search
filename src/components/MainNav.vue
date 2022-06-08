@@ -7,9 +7,6 @@
         <a href="/" class="flex items-center h-full text-3xl font-semibold">{{
           company
         }}</a>
-        <h2 class="flex items-center h-full ml-8 font-semibold">
-          Developed by: {{ author }}
-        </h2>
       </div>
     </div>
   </header>
@@ -21,7 +18,6 @@ export default {
   data() {
     return {
       company: "RedCode Jobs",
-      author: "Cristian Arroyo Colon",
     };
   },
 };
