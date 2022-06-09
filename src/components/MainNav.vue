@@ -4,9 +4,33 @@
       <div
         class="flex flex-nowrap h-full px-8 mx-auto border-b border-solid border-brand-gray-1"
       >
-        <a href="/" class="flex items-center h-full text-3xl font-semibold">{{
+        <a :href="url" class="flex items-center h-full text-xl font-semibold">{{
           company
         }}</a>
+        <nav class="h-full ml-12">
+          <ul class="flex h-full p-0 m-0 list-none">
+            <li class="h-full">
+              <a href="" class="flex items-center h-full py-2.5">Teams</a>
+            </li>
+            <li class="h-full ml-9">
+              <a href="" class="flex items-center h-full py-2.5">Locations</a>
+            </li>
+            <li class="h-full ml-9">
+              <a href="" class="flex items-center h-full py-2.5"
+                >Life at RedCode</a
+              >
+            </li>
+            <li class="h-full ml-9">
+              <a href="" class="flex items-center h-full py-2.5">How we Hire</a>
+            </li>
+            <li class="h-full ml-9">
+              <a href="" class="flex items-center h-full py-2.5">Students</a>
+            </li>
+            <li class="h-full ml-9">
+              <a href="" class="flex items-center h-full py-2.5">Jobs</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   </header>
@@ -17,7 +41,8 @@ export default {
   name: "MainNav",
   data() {
     return {
-      company: "RedCode Jobs",
+      company: "RedCode Careers",
+      url: "https://careers.google.com",
     };
   },
 };
