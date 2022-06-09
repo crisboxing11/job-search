@@ -12,8 +12,14 @@
             <li class="h-full">
               <a href="" class="flex items-center h-full py-2.5">Teams</a>
             </li>
-            <li v-for="menuItem in menuItems" class="h-full ml-9">
-              {{ menuItem }}
+            <li
+              v-for="menuItem in menuItems"
+              :key="menuItem"
+              class="h-full ml-9"
+            >
+              <a href="" class="flex items-center h-full py-2.5">
+                {{ menuItem }}</a
+              >
             </li>
           </ul>
         </nav>
@@ -30,7 +36,6 @@ export default {
       company: "RedCode Careers",
       url: "https://careers.google.com",
       menuItems: [
-        "Teams",
         "Locations",
         "Life at RedCode",
         "How We Hire",
