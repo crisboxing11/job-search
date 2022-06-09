@@ -10,7 +10,7 @@ describe("MainNav", () => {
 
   it("displays menu items for navigation", () => {
     const wrapper = mount(MainNav);
-    const navMenuItems = wrapper.findAll("li");
+    const navMenuItems = wrapper.findAll("[data-test='main-nav-list-item']");
     const navText = navMenuItems.map((item) => item.text());
     expect(navText).toEqual([
       "Teams",
