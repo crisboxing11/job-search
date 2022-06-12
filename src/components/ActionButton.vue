@@ -4,7 +4,6 @@
 
 <script>
 export default {
-  nam: "ActionButton",
+  name: "ActionButton",
 };
 </script>
-`

@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import ActionButton from "@/componets/ActionButton.vue";
+import ActionButton from "./components/ActionButton.vue";
 export default {
   name: "MainNav",
   components: {
